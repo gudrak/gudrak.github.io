@@ -5,6 +5,842 @@
   </head>
   <body>
     <h1>Hola mundo!</h1>
-    <p>Bienvenido a mi sitio web.</p>
+    <p>freedom & security in P2P transactions.
+
+Abstract
+A decentralized Peer to Peer payment gateway, with a smart contract
+escrow, allows users to exchange goods or services by paying with crypto
+holded in their self-custodial wallet. Users have total control over the
+funds during the transaction, without needing a central ﬁnancial
+institution to validate each operation.
+
+freedom & security
+in P2P transactions.
+
+Index
+Introduction
+
+4
+
+paydece.io
+i. How does it work?
+ii. Characteristics
+iii. Technical Information.
+iv. Smart contracts in blockchain.
+v. Tokenomics.
+vi. Attributes that empower paydece
+
+6
+8
+10
+11
+13
+14
+21
+
+Roadmap
+
+22
+
+Go to Market
+i. Crypto to FIAT P2P trading
+ii. P2P crypto market
+iii. Product market ﬁt
+iv. Learning since launch
+
+24
+25
+27
+28
+30
+
+Conclusion
+Legal Disclaimer & Risk
+Risk Disclosure
+
+31
+33
+34
+
+Introduction
+
+freedom & security in P2P transactions.
+
+4
+
+Introduction
+Freedom is the key to humanity's progress. Blockchain, crypto, and
+self-custodial wallets are very powerful because they free people
+ﬁnancially. With them sending or receiving digital value, swapping
+different currencies, and staking money to earn more, without needing
+to be validated or trusted by a central ﬁnancial institution is now possible.
+However, when users are willing to do a peer-to-peer crypto transaction
+for exchanging goods or services using this new technology there is a
+high risk of fraud because transactions in the blockchain are
+decentralized, anonymous, and irreversible.
+A smart contract is a piece of software that is hosted in the blockchain
+and can be coded for executing many different functions that are visible
+and transparent to anyone, as the code is public in the blockchain. The
+functions that each smart contract has, can be controlled by the wallets
+that connect to them.
+A smart contract escrow can hold the value between buyer and seller, as
+a third party in the middle, providing security, transparency, and control
+over the transaction until the transfer of good or service that is being
+exchanged between the peers is successfully completed and validated
+by them.
+
+The smart contract is a piece of code, that is controlled by the wallet of the buyer and the wallet
+of the seller, it is not a centralized institution. paydece has no control over the funds the user
+escrows using the smart contract.
+
+freedom & security
+in P2P transactions.
+
+5
+
+paydece.io
+
+freedom & security in P2P transactions.
+
+6
+
+paydece.io
+A smart contract decentralized escrow, that allows users to exchange
+goods or services using the money they hold in a self-custodial wallet.
+Users connect to the Dapp with their wallet where they own their private
+keys (they have total control over their funds) and will block their funds in
+a smart contract that will hold the value until the transaction of the good
+or service is completely done and validated by them.
+
+Buyer sends the
+stablecoin to the
+smart contrac for
+safekeeping
+
+SMART
+CONTRACT
+
+Smart Contract
+releases
+cryptocurrencies
+to seller.
+
+Both parties validate
+the transfer.
+
+BUYER
+
+SELLER
+Seller transfer the vehicle to buyer, knowing
+that SC has the stablecoin locked.
+
+freedom & security
+in P2P transactions.
+
+7
+
+i. How does it work?
+Two users want to exchange any good or service using crypto as the
+payment method. They agree to use paydece decentralized escrow so
+that the buyer will ensure that he will receive the good or service and the
+seller ensures that he will receive the money. Funds will remain in the
+smart contract until both sides validate.
+Video DEMO.
+1.
+
+Users connect using their self-custodial wallet once they agree they
+will exchange the good or service, they set the price, the exchange
+conditions & terms, etc.
+
+2.
+
+The seller creates an invoice by completing the required information
+and sending the invoice (link) to the buyer.
+
+3.
+
+The buyer adds the invoice to his dashboard and creates the escrow
+(smart contract). Then he sends the crypto to the smart contract.
+
+4.
+
+The smart contract escrow will hold the funds of the buyer in the
+middle of both wallets.
+
+5.
+
+The seller will send the product to the buyer (he knows that the
+crypto is escrowed and they cannot move unless he validates it) or do
+the service they previously agreed to. Once he transfers the goods or
+ﬁnishes the service, he validates (pressing the validation button in
+the Dapp).
+
+6.
+
+The buyer receives the good and validates it, the same way.
+
+7.
+
+The funds are released when both sides validate the transaction was
+successfully done.
+
+freedom & security
+in P2P transactions.
+
+8
+
+i.i Disputes:
+If there is any problem during the transaction, meaning that the funds
+are escrowed but one of the sides doesn't validate, a dispute is raised.
+paydece at the ﬁrst stage (resolution of conﬂicts) can solve it and decide
+the side the funds will move to. If the dispute escalates and a complete
+legal framework is needed Kleros.io, a decentralized arbitration system
+will be used for ﬁnding the ﬁnal resolution.
+
+freedom & security
+in P2P transactions.
+
+9
+
+ii. Characteristics
+� A Dapp, users can connect from any corner of the world using their
+self-custodial wallet. The smart contract is 100% in the blockchain.
+Similar characteristics and look & feel to Uniswap (or any web 3
+decentralized protocol).
+� The smart contract escrow is EVM compatible and can be launched
+and used in every EVM blockchain. It works with Ethereum, BNB smart
+chain, Polygon, and Rootstock (more blockchains including payments
+with bitcoin in the future will be added).
+� The protocol works with stablecoins that include USDT, BUSD, USDC,
+and others. A new feature for payments using each native blockchain
+coin will be available.
+� Users can connect using MetaMask, Coinbase wallet, and more than
+150 other blockchain wallets. paydece is a wallet-connect compatible
+protocol.
+� The app can be used in Spanish and English language.
+� The smart contract charges a commission fee (0,5%) or the total
+amount of the money for every transaction done.
+� A smart contract audit was done by hacken.io for ensuring that
+security, functionality, and communication are correct and transparent.
+The ﬁnal score was 9.5/10.
+
+freedom & security
+in P2P transactions.
+
+10
+
+iii. Technical Information.
+This smart contract implements an
+escrow service for cryptocurrency
+transactions. It allows the creation
+of an escrow for a given order,
+where a buyer and a seller can
+deposit their funds, which are held
+by the contract until the
+transaction is completed or a
+dispute is resolved. The contract
+can be used to hold funds in
+different currencies, as long as they
+are ERC20 tokens. The contract
+deﬁnes a structure called Escrow to
+represent an escrow, which
+contains the addresses of the buyer
+and seller, the value of the
+transaction, the commissions for
+the buyer and seller, the currency
+used, and the status of the escrow.
+The contract also maintains a
+correspondence between the order
+ID and the escrow to store the
+escrows that have been created.
+The contract has a
+whitelistedStablesAddresses
+
+freedom & security
+in P2P transactions.
+
+assignment to store a list of
+whitelisted stablecoin addresses
+and checks that the currency used
+in an escrow is a whitelisted
+stablecoin before creating the
+escrow. There is also a
+feesAvailable assignment to track
+fees that can be withdrawn, and a
+feesAvailableNativeCoin variable to
+track fees that can be withdrawn in
+the native currency (presumably
+ETH). The contract has a modiﬁer
+onlyBuyer and onlySeller to restrict
+certain functions to be called only
+by the escrow buyer or seller,
+respectively. It also has an
+onlyOwner modiﬁer to restrict
+certain functions to be called only
+by the contract owner. The
+contract has a base contract
+Ownable, which provides an
+onlyOwner modiﬁer and an owner
+address to store the address of the
+contract owner.
+
+11
+
+iii. Technical Information.
+
+Technical diagram.
+
+freedom & security
+in P2P transactions.
+
+12
+
+iv. Smart contracts
+in blockchain.
+BNB Smart Chain - Address
+0x712b8917E51c24FAd8c9ea934d1c1772E6E761B1
+https://bscscan.com/address/0x712b8917E51c24FAd8c9ea934d1c1772E6E761B1
+
+Ethereum - Address
+0x540f5c407B73c2c2Af70B7E64cDe1FA597f52e48
+https://etherscan.io/address/0x540f5c407B73c2c2Af70B7E64cDe1FA597f52e48
+
+Polygon - Address
+0x466d90b83A6eF39018fd8E16AC4094099dAd9AA6
+https://polygonscan.com/address/0x466d90b83a6ef39018fd8e16ac4094099dad9aa6
+
+Rootstock - Address
+0x75B25632aC5F79edEbECb5ABD3e3DaC746A7B848
+https://explorer.rsk.co/address/0x75b25632ac5f79edebecb5abd3e3dac746a7b848
+
+freedom & security
+in P2P transactions.
+
+13
+
+v. Tokenomics.
+The Paydece Token Economy has been built based on the following
+guidelines:
+A Single Token model: The engine of Paydece's economy will be its
+protocol Token under the acronym PDC. It is pre-mined with a limited
+supply of 200M token units (no more units will be issued than those
+already issued). It will have various functionalities and utilities.
+A distribution of pre-mined tokens designed for decentralization where
+the community will be the recipient of the most signiﬁcant number of
+units, accompanied by a vesting structure where the Founders, investors,
+and the team are those who have the most rigid lock pointing to a
+commitment of the main actors.
+A deﬂationary monetary policy:
+1) With emissions at a decreasing rate that are halved every two years.
+Stage 1: growth/inﬂationary,
+Stage 2: consolidation and maturity,
+Stage 3: Deﬂationary.
+2) A token-burning mechanism proportional to the demand, use, and
+interaction with the protocol, of gradual and hybrid application (manual
+off-chain and automatic on-chain).
+A sustainable Business Model aligned to a healthy economy token.
+
+freedom & security
+in P2P transactions.
+
+14
+
+PDC Token:
+Acronym: PDC
+Type: Protocol token (Type 2 Dapp)
+Liquidity: Ethereum, Polygon, BNB chain, and Rootstock.
+Smart Contracts: (paydece.io - iv)
+Supply: 200M units (No more units than those deﬁned will be issued).
+Being the only protocol token and engine of the Payedece economy,
+multiple functionalities and utilities have been assigned to it, namely,
+making it an asset of value, attractive to all users of the ecosystem, and
+with a projection that in the long term for that can operate and be sued
+outside of Paydece's ecosystem.
+Functionalities and utility:
+Governance token: To be implemented under a gradual process, with the
+following stages:
+� Stage 1: Complete centralization - the team has complete control over
+the project, and there is no voting. There will be unexpected events that
+require immediate reviews and corrections that cannot be done
+democratically (limited time).
+� Stage 2: Semi-decentralization - the team still has full control of the
+project and can implement revisions. However, the community can be
+involved in non-urgent decisions, providing input through a forum and
+off-chain voting system.
+� Stage 3: Full decentralization - the project becomes fully decentralized,
+all decisions are made through a strict procedure, and all voting is done
+on-chain.
+
+freedom & security
+in P2P transactions.
+
+15
+
+Exchange value and payment currency:
+The PDC token can be purchased in a public market; available exchanges
+at market prices as long as liquidity allows it (In some cases and intervals
+the user may ﬁnd himself with slippage and therefore price signiﬁcant
+impact). Ultimately it will be a free trade exchange within the blockchain.
+Users will be able to transact with PDC to acquire other cryptocurrencies
+or FIAT money, products, services, payment of salaries to the team, and
+more. Choosing the PDC as the transaction currency will have the beneﬁt
+of discounts or cashback depending on the case when using paydece
+escrow for transactions.
+Toll: Refers to the battery of gas fees, network toll, commissions, etc. that
+can be presented in the use of the protocol, as well as penalties (Penalty
+Fee) for example for early withdrawal of capital compromised by any
+other breach of clauses, the Dispute fee of 23 USD from Kleros, some
+other sanction for improper behavior of the user, etc, all through the
+PDC token.
+Rewards: Payment of the rewards of the Bounty Program for the
+detection of bugs or possible improvements and everything that can be
+part of increasing the user experience providing PDC as a reward. Also,
+using Airdrops modality for those who fulﬁll certain tasks such as
+following Paydece on the networks, likes, retweets, contributing to add
+content, making memes or NFTs, even being active in Discord,
+participating in Twitter Spaces, qualifying users, paydecers of the month,
+etc.
+In turn, Paydece will have an exclusive DeFi Platform for those users who
+voluntarily choose to add liquidity to the PDC/USDT pair (Par as an
+example) or choose to block capital that contributes to increasing the T
+VL (“STAKING”), in all cases will be rewarded in PDC at attractive rates of
+return.
+
+freedom & security
+in P2P transactions.
+
+16
+
+Token distribution and vesting structure:
+In order to provide the entire ecosystem with security, transparency, and
+decentralization, to avoid unexpected movements in the PDC price, there
+has to be a correspondence between the value that the product provides
+with the attractiveness that the user keeps and does not sell the token
+(hold and use) and its price, our tokenomists have deﬁned the following
+stakeholders, the amount of PDC they will receive and their corresponding
+release policy (amount and times) of the assigned tokens (vesting).
+
+PDC emitions and projections:
+The PDC is a protocol token that is pre-mined, so its emissions and its
+progressive appearance in circulation are directly related to the deﬁned
+vesting structure. As long as the PDCs are stored in the contract that
+gave rise to them, these units will not be part of the working capital.
+Depending on the vesting structure, plus other relevant variables a
+projection was established in which the appearance of the PDCs in the
+currency can create. Supply is an item of great relevance within monetary
+policy and plays a crucial role in the health of the economy and the
+sustainability of the protocol and its business model.
+The issues were designed with a decreasing rate model within a
+deﬂationary monetary policy following the line and current of the
+Paydece tokenomist.
+In the following table and graph, we can see the emission projections
+taking an analysis period of 8 years counting from the public release of
+the token and as relevant aspects, we can mention the following:
+For the community (creditor of half of the total tokens) an issuance limit
+of 0.05% per day was established for the ﬁrst 2 years, then through a kind
+of "halving" reducing them to half for the following 2 years (0.025%) and
+so on every two years.
+In the areas of Founders and equipment, Private Sale, and Public Sale,
+the issues will be fully in circulation in the analysis period taken (8 years).
+In the Community, Foundation, and Marketing areas, during the 8-year
+period taken for the projections, 32.5%, 44%, and 47% will remain if the
+assigned PDCs are issued.
+According to the projection, by the end of year 8, there will be
+149,828,000 PDCs in circulation, which represents 74.91% of the total
+pre-mined tokens in gross quantity, since those tokens that are going
+to be burned during the mentioned period are not being taken into
+account.
+
+freedom & security
+in P2P transactions.
+
+18
+
+19
+
+PDC token burning mechanism:
+Within the monetary policy deﬁned of a deﬂationary nature, a mechanism
+for burning tokens has been established. It will be implemented gradually
+with respect to decentralization in burning decisions, following the same
+line of gradualism to be implemented for the governance of the protocol,
+where a hybrid modality of off-chain manual burning and on-chain
+automatic programmed burning will be applied.
+The projected structure for burning the PDC token has deﬁned
+guidelines and when we move on to the particular instance of precise
+construction and decisions, they will be as follows:
+� The burning of tokens is a highly relevant item of the deﬂationary monetary policy derived from a token economy raised from the general to
+the particular.
+� Token burning mechanism that tends to decentralization with the
+gradual implementation of the objective aligned to the same model,
+rhythm and times of the DAO and its Governance System.
+� Hybrid burning system ON CHAIN and OFF CHAIN (manual and automatic)
+� A speciﬁc burning wallet will be established that will be the destination
+for all purposes of the burned tokens will be stored, they cannot be
+reused or reincorporated into circulation.
+� A "buybacks and burn" mechanism will also be established, where in a
+previous step the PDCs are repurchased in the Market and then those
+units travel to the burn wallet.
+� As stated in the Vesting Structure, PDCs that are not sold in the Private
+Sale will be sent to the burn wallet.
+� The units that are burned will mainly come from the transactions that
+occur during the normal and usual operation of the protocol. An example may be the following: In a PDC/USDT swap: The user pays 1%, 0.5%
+of that swap is divided into 0.4% to add to the pair's Liquidity Pool and
+0.1 % for token burning. The remaining 0.5% that the user pays is divided into 0.4% to pay liquidity providers and the remaining 0.1% goes to
+token burning.
+� Another source of burning may come directly from PDCs stored in the
+Foundation vault if necessary. For example, applying the buy and burn
+technique.
+� The variables associated with the different types of burning will be
+deﬁned: Periodic burning (Periodicity - time unit). Burn based on usage
+(Percentage of transactions and their types) Burn based on price (from
+a certain threshold or percentage deviation). Burning of inactive tokens
+(those that are detected as not being used for a certain time and are
+subject to a certain condition).
+
+vi. Attributes that empower
+paydece:
+� Highly scalable: The solution created and owned by users fully works in
+the blockchain.
+� Zero operative cost: Each transaction is paid and controlled by users
+wallets.
+� Easy business model: For each transaction done, the smart contract
+automatically charges the commission fee.
+� Gigantic market: Real use case for self-custodial wallets. Any user can
+buy any good with their wallet.
+� Low barriers to users to entry: Self-custodial wallet created in less
+than one minute.
+� Viral growth: For using the solution both peers have to agree ﬁrst, so
+users that enjoy paydece are salesforce because they have to teach
+others how to use the protocol.
+� Low bureaucracy: The transaction is fully between peers.
+� Historical timing: Blockchain applied to ﬁnance is massively growing
+in adoption, but today it is in a very early stage.
+� Real use case: Users can use the money they hold in self-custodial
+wallets to buy or sell goods in real life.
+� Clear vision: Satoshi Nakamoto's disciples, helps to decide the next
+steps the startup has to take in development, marketing, compliance,
+etc.
+
+freedom & security
+in P2P transactions.
+
+21
+
+Roadmap
+
+freedom & security in P2P transactions.
+
+22
+
+Roadmap
+An overview of the main features and improvements we are
+working on in paydece.
+
+Q1 2023
+
+Q3 2023
+
+• Creation of sales announcements
+• Market of orders
+• P2P exchanges between blockchains
+• Direct payments with link
+• Score with transaction history
+• Audit of smart contracts hacken.io
+
+• Direct payments for ecommerces checkout
+• B2B integrations with ecommerces/
+marketplaces
+• Plugin development
+• Open source code
+
+Q4 2023
+Q2 2023
+• B2B integrations with wallets
+• Integrated and encrypted chat
+• Veriﬁed Merchant Program
+• Country-speciﬁc payment methods
+
+freedom & security
+in P2P transactions.
+
+• Escrow for retail
+• Escrow for services - freelancers
+• Escrow for automotive
+• Escrow for real estate
+• B2B integrations
+
+23
+
+Go to
+market
+
+freedom & security in P2P transactions.
+
+24
+
+i. Crypto to FIAT P2P trading
+paydece is a decentralized escrow that can be used between peers to
+exchange any kind of goods because the Dapp always works in the same
+way. Cryptos are escrowed (blocked) between buyer and seller, they
+exchange what they previously agree and they release once the
+transaction of the good they are exchanging is successfully done.
+Since launch, the main use case our users decided to use paydece is the
+crypto to FIAT exchange. Although it is not a market that paydece
+believes will continue to be in the long term, it is the way to continue
+building traction and revenue. The objective in this bear market is to
+obtain traction and break even in early 2023. Great success will come in
+the next bull market.
+Once this milestone is reached, paydece will continue developing the
+solution for other use cases: a marketplace of retail products & services, a
+marketplace of cars, a marketplace for real estate, and a marketplace for
+goods in the metaverse.
+
+freedom & security
+in P2P transactions.
+
+25
+
+The solution works the following way:
+1.
+
+With referrals link, YouTubers, communities, worth of mouth, and
+web3 newspapers, paydece decentralized escrow is got to know by
+the web3 users.
+
+2.
+
+Users join the telegram group that is divided by the main P2P
+countries of Latam. They upload the order of buying or selling crypto
+in their country using the bot.
+
+3.
+
+There is when the offer and the demand are joined. Once they agree
+on the terms of the transaction the buyer of the crypto creates the
+invoice and sends it to the seller.
+
+4.
+
+The seller sends the crypto to the escrow. Once crypto is blocked the
+buyer sends the ﬁat to the buyer and validates it.
+
+5.
+
+When the seller receives the FIAT releases the crypto to the buyer.
+
+For having a clear view of the market size of the ﬁrst stage go-to-market
+strategy that includes, P2P crypto to ﬁat trading, Remittances in crypto,
+and On/Off P2P ramp some numbers are shared below.
+
+freedom & security
+in P2P transactions.
+
+26
+
+ii. P2P crypto market
+The decentralized escrow can be used in many different ways, but the
+ﬁrst product market ﬁt was in P2P crypto to FIAT trading. A market size
+study was done to have an idea of whether the market is big enough.
+A ChainAnalysis report conﬁrmed that the total crypto value received
+from July 21 to July 22 in Latin America and Spain was 662Bn USD (Total
+Addressable Market). If this number is converted to de Decentralized
+Finance (users that operate directly in the blockchain owning the private
+keys) the Serviceable Available Market is 159 Bn USD. Finally, the
+estimated Serviceable Obtainable Market is of 1.16Bn USD.
+From a self-made study with information obtained from SimilarWeb, the
+number of possibles users located in Spain, Argentina, Mexico, Colombia,
+and Venezuela on average was greater than 6.000.000 users.
+
+freedom & security
+in P2P transactions.
+
+27
+
+iii. Product market fit
+
+Volume escrowed per month since launch, April 22 to November 22.
+In the ﬁrst month of the escrow launch, there was a total amount of
+281.606 USD escrowed in 33 transactions. This included a 100.000 USD
+ﬁat to crypto transaction of paydece, for turning the cash of investment
+into crypto.
+From May to July the number of escrows created increased - in May there
+were fewer escrows than in April - from 6 to 37 in July. During those
+months many different products were transacted:
+� Land in the metaverse.
+� Real Estate.
+� Jewelry.
+� Electronics devices.
+� Remittances.
+� Argentinian food.
+� Coat.
+But the main use case was the peer to peer crypto to FIAT decentralized
+exchange.
+
+freedom & security
+in P2P transactions.
+
+28
+
+paydece is a solution created so that users can use crypto to buy or sell
+goods, any kind of them. But from launch to July the main use case was
+the exchange of crypto to FIAT. In paydece the team knew that the
+solution was not focused on that niche, so they decided to create a QR for
+direct payments in crypto. An ideal solution for buying goods in physical,
+retail commerce. One hundred percent of the energy started to be
+focused on QR direct payments.
+During those two months, the results were very bad. Zero transactions
+were done using the QR payment method and less than 1.000 USD were
+escrowed in August and September. With these results, the decision was
+to return to the FIAT to crypto exchange.
+Good results were quickly achieved. In October product market ﬁt was
+obtained (almost 3 transactions per day and more than 188.000 USD
+escrowed that month). paydece was a solution that allowed users to
+exchange crypto to FIAT in a decentralized way.
+From October to November, a commission fee for every transaction done
+started to be charged and the number of escrows created continued to
+increase (almost double amounts of escrows created in November than
+in October). The commission fee charged is 0,1% of the total amount of
+the transaction, this number will increase to 0,5% and 1% in the ﬁrst half
+of 2023.
+
+freedom & security
+in P2P transactions.
+
+29
+
+iv. Learning since launch
+Users ﬁnd the solution very useful as a middle third party that provides
+security and transparency in the P2P crypto to FIAT decentralized
+transactions. Most of the users once they understand how paydece
+works, they stop to use other centralized solutions. Because paydece
+has no KYC, has low bureaucracy, and is decentralized users prefer it
+among others..
+� Users love the effect created when validating each step during the
+transaction, they want to have control of the funds. paydece has a good
+wow effect (that has to continue being improved) when funds are
+released.
+� Users being paydece ambassadors “paydecers” is the best way to grow,
+rewarding users to spread the solution in their communities builds
+more trust in our new users than doing traditional marketing.
+� A place where the offer and the demand are joined is needed. Without
+this place, it is difﬁcult to unite the buyer and the seller. Telegram
+group today works as the place where the crypto buyer and sellers join.
+A marketplace integrated into the app is being developed for
+improving user experience.
+� User learning curve:
+� They made a little USD amount transaction to try if the solution works.
+� They do one complete crypto-to-FIAT transaction.
+� They understand that with paydece they can exchange whatever they
+want because crypto is escrowed and between peers, they exchange
+any good they previously agree.
+� The percentage of disputes was 0,7% (3 from 394 transactions - Nov22).
+One dispute was by mistake, another one was because of a problem
+with the bank (no bad intention of the user). Only one dispute was
+raised and a scammer was identiﬁed. The problem was easily solved
+because the scammer was not willing to contribute information.
+
+freedom & security
+in P2P transactions.
+
+30
+
+Conclusion
+
+freedom & security in P2P transactions.
+
+31
+
+Conclusion
+We are facing an opportunity. Blockchain technology is revolutionizing
+the world as the internet did it. For storing data, information, or value
+there is no more need for trust in a central institution because
+decentralized networks can now do this job. This raises the speed of value
+exchange, simpliﬁes and reduces the steps needed to do online
+transactions, discards geographical or time limits reduces costs because
+it lowers the bureaucracy, and also reduces friction between the parties
+involved. These are some of the reasons why we know that surely this
+technology will be soon, massively adopted. Creating a self-custodial
+wallet and start using it takes less time than creating a new email
+account.
+Crypto is the future simply because it makes users' lives easier, reducing
+friction, bureaucracy, fees, cost, and time. Central ﬁnancial institutions
+will be left behind because people already know that they can not trust
+them. Frauds (FTX collapse), scams (LunaTerra collapse), and inﬂation
+(during all human history) are examples of this.
+paydece conﬁrmed that there are early adopters willing to do their
+transactions trusting in smart contracts other than on a central
+institution. Now is the time to continue improving and scaling the
+solution to every corner of the world. The future of ﬁnance is here,
+welcome to the evolution of transactions.
+
+freedom & security
+in P2P transactions.
+
+32
+
+Legal Disclaimer & Risk
+This document does not constitute an offer to sell, or the solicitation of an
+offer to buy. Nothing in this document shall be deemed to constitute a
+prospectus of any sort or a solicitation for investment, nor does it in any
+way pertain to an offering or a solicitation of an offer to buy any securities
+in any jurisdiction. The information in this document does not constitute a
+recommendation by any person to purchase or otherwise invest in
+paydece or its services or any other Cryptographic Token or Currency and
+neither the Issuer norpPaydece has authorized any person to make any
+such
+recommendation.
+Certain statements contained in this document may constitute
+forward-looking statements or speak to future events or plans. Such
+forward-looking statements or information involve known and unknown
+risks and uncertainties, which may cause actual events to differ materially.
+No reliance should be placed on any such forward-looking statements or
+information. The information provided in this publication does not constitute investment advice, ﬁnancial advice, trading advice, or any other sort
+of advice. You should not treat any of the publication’s content as such.
+This material is for informational purposes only.
+(i) This is not an offer, or solicitation of an offer, to invest in, or to buy or sell,
+any interests or shares, or to Participate in any investment or trading
+strategy.
+(ii) This is not intended to provide accounting, legal, or tax advice, or
+investment recommendations.
+(iii) This is not an ofﬁcial statement of paydece. No representation or
+warranty is made, expressed or implied, with respect to the accuracy or
+completeness of the information or to the future performance of any
+digital Asset, ﬁnancial instrument, or other market or economic measure.
+
+33
+
+The paydece team does not recommend that any Cryptocurrency should
+be bought, sold, or held by you. Do conduct your due diligence and consult
+your ﬁnancial advisor before making any investment decisions. By purchasing paydece, you agree that you are not purchasing a security or Investment, and you agree to hold the Team harmless and not liable for any
+losses or taxes you may incur. You also agree that the Team is presenting
+the Coin "as it is" and is not required to provide any support or services.
+You should have no expectation of any form from paydece and its Team,
+Although paydece is a Community-Driven Decentralized Finance (DeFi)
+for social networking and not a registered Digital Currency. The
+Team strongly recommends that citizens in areas with government bans
+on
+Cryptocurrency do not purchase it because the Team cannot ensure
+compliance with established regulations within certain territories. Always
+make sure that you comply with your local laws and regulations before you
+make any purchase.
+
+Risk Disclosure
+Note that there are always risks associated with Smart Contracts. Please
+use them at your own risk. Paydece is not a registered broker, analyst, or
+Investment Advisor. Everything that is provided in this publication is purely
+for guidance, informational and educational purposes. All information
+contained herein should be independently veriﬁed and conﬁrmed. Paydece
+does not accept any liability for any loss or damage whatsoever caused in
+reliance upon such information or services. Please be aware of the risks
+involved with any trading done in any Financial Market. Do not trade with
+money that you cannot afford to lose. When in doubt, you should consult a
+Qualiﬁed Financial Advisor before making any investment decisions.
+
+34
+
+P2P payments
+with blockchain.
+
+</p>
   </body>
 </html>
