@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reproductor de Archivos M3U</title>
-    <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet">
-    <script src="https://vjs.zencdn.net/7.15.4/video.js"></script>
+    <title>Reproductor M3U</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <h1>Reproductor de Archivos M3U</h1>
+    <h1>Reproductor M3U</h1>
     
-    <video id="m3u-player" class="video-js vjs-default-skin" controls preload="auto" width="640" height="360">
-        <source src="https://raw.githubusercontent.com/gudrak/gudrak.github.io/main/index.m3u" type="application/x-mpegURL">
+    <video id="m3u-player" controls>
+        <source id="video-source" type="video/mp4">
     </video>
     
-    <script>
-        var player = videojs('m3u-player');
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
