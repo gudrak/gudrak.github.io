@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Reproductor de M3U</title>
-    <script src="https://cdn.jwplayer.com/libraries/U8mtb3uW.js"></script>
+    <title>Reproductor de Archivos M3U</title>
 </head>
 <body>
-    <div id="player-container"></div>
-
-    <script>
-        var player = jw.player("player-container", {
-            playlist: "https://github.com/gudrak/gudrak.github.io/blob/main/index.m3u",
-            width: "100%",
-            aspectratio: "16:9"
-        });
-    </script>
+    <h1>Reproductor de Archivos M3U</h1>
+    
+    <video id="m3u-player" controls autoplay>
+        <source src="tuarchivo.m3u" type="application/x-mpegURL">
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
