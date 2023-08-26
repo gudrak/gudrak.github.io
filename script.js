@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const player = document.getElementById('m3u-player');
     const videoSource = document.getElementById('video-source');
     
-    fetch('tuarchivo.m3u')
+    fetch('https://raw.githubusercontent.com/gudrak/gudrak.github.io/main/index.m3u')
         .then(response => response.text())
         .then(data => {
             const lines = data.split('\n');
