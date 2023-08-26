@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+#m3u-player {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+}
