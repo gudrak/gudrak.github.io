@@ -3,26 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selector de Enlace Aleatorio</title>
+    <title>TBBT</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             text-align: center;
             margin: 20px;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1; /* Ajuste del espaciado entre líneas */
         }
+
+        h1 {
+            font-size: 48px; /* Tamaño más grande */
+            margin-bottom: 5px;
+            margin-top: -10px; /* Ajuste para acercar al subtítulo */
+        }
+
+        h2 {
+            font-size: 52px; /* Tamaño más grande */
+            font-weight: bold; /* Negrita */
+            margin-top: -16px; /* Ajuste para acercar al título */
+            margin-bottom: 5px;
+            letter-spacing: -2px; /* Reducción del espacio entre letras */
+        }
+
+        h3 {
+            font-size: 32px; /* Tamaño más pequeño */
+            margin-bottom: 10px; /* Reducción del espacio inferior */
+            margin-top: -14px; /* Ajuste para acercar al subtítulo anterior */
+            text-transform: uppercase; /* Convertir texto a mayúsculas */
+        }
+
         button {
             padding: 10px;
             font-size: 16px;
             cursor: pointer;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
         }
         #selectedLink {
             margin-top: 20px;
+            color: #fff;
         }
     </style>
 </head>
 <body>
-    <h1>Selector de Enlace Aleatorio</h1>
-    <button onclick="seleccionarEnlaceAleatorio()">Seleccionar Enlace Aleatorio</button>
+    <h1>the</h1>
+    <h2>BIG BANG</h2>
+    <h3>THEORY</h3>
+    <button onclick="seleccionarEpisodioAleatorio()">Episodio Random</button>
     <div id="selectedLink"></div>
 
     <script>
@@ -306,7 +340,7 @@
             "https://streamsito.com/video/tt0898266-12x22/",
             "https://streamsito.com/video/tt0898266-12x23/",
         ];
-function seleccionarEnlaceAleatorio() {
+        function seleccionarEpisodioAleatorio() {
             var indiceAleatorio = Math.floor(Math.random() * enlaces.length);
             var enlaceAleatorio = enlaces[indiceAleatorio];
             
