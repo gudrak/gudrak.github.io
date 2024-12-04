@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TBBT</title>
+    <style>
+        body {
+            text-align: center;
+            margin: 20px;
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            line-height: 1;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            line-height: 1;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-top: -8px;
+        }
+
+        h2 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-top: -12px;
+            letter-spacing: -0.5px;
+        }
+
+        h3 {
+            font-size: 2rem;
+            text-transform: uppercase;
+            margin-top: -8px;
+            margin-bottom: 10px;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 1rem;
+            cursor: pointer;
+            background-color: #444;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin: 20px auto;
+            display: block;
+            max-width: 200px;
+        }
+
+        #videoFrame {
+            margin-top: 20px;
+            width: 90%;
+            max-width: 800px;
+            aspect-ratio: 16/9;
+            border: 2px solid #444;
+            border-radius: 10px;
+            background-color: #222;
+        }
+
+        /* Ajustes para pantallas pequeñas */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 8vw;
+            }
+
+            h2 {
+                font-size: 10vw;
+            }
+
+            h3 {
+                font-size: 6vw;
+            }
+
+            button {
+                font-size: 4vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>the</h1>
+    <h2>BIG BANG</h2>
+    <h3>THEORY</h3>
+    <button onclick="seleccionarEpisodioAleatorio()">Episodio Random</button>
+    <iframe id="videoFrame" src="" frameborder="0" allowfullscreen></iframe>
+
+    <script>
+        // Array de enlaces
+        var enlaces = [
+            "https://streamsito.com/video/tt0898266-1x01/",
+            "https://short.ink/kBQiIi9_a"
+        ];
+
+        // Función para seleccionar un episodio aleatorio
+        function seleccionarEpisodioAleatorio() {
+            var indiceAleatorio = Math.floor(Math.random() * enlaces.length);
+            var enlaceAleatorio = enlaces[indiceAleatorio];
+            document.getElementById('videoFrame').src = enlaceAleatorio;
+        }
+
+        // Seleccionar un episodio aleatorio al cargar la página
+        window.onload = seleccionarEpisodioAleatorio;
+    </script>
+</body>
+</html>
